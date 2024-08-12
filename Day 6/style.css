@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+}
+
+.course-section{
+    margin: 20px 50px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.course-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.course{
+    padding: 10px;
+    box-shadow: 0px 0px 8px #ccc;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.course:hover{
+    background-color: rgb(213, 215, 216);
+}
+
+.readmore{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.readmore a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.readmore a:hover{
+    background-color: rgb(206, 7, 7);
+    border-radius: 10px;
+}

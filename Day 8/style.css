@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+}
+
+.mytable{
+    background-color: aliceblue;
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.mytable th{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(6, 123, 161);
+    color: white;
+}
+
+.mytable td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.mytable tr:nth-child(even){
+    background-color: rgb(230, 179, 179);
+}
+
+.mytable tr:hover{
+    background-color: rgb(184, 189, 195);
+}

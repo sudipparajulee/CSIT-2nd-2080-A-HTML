@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+}
+
+.myform{
+    width: 400px;
+    background-color: skyblue;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.myform input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.myform input:focus{
+    /* outline: none; */
+    outline: 2px solid rgb(95, 108, 194);
+}
+
+.myform input[type=submit]{
+    width: 50%;
+    background-color: rgb(179, 217, 39);
+    cursor: pointer;
+}
+
+.myform input[type=submit]:hover{
+    background-color: yellowgreen;
+}
+
+.mydiv{
+    background-color: yellowgreen;
+    width: 500px;
+    height: 500px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    overflow-y: auto;
+}
+

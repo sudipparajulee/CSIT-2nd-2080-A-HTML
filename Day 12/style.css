@@ -1,0 +1,153 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.topbar{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgb(230, 224, 224);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: #f4f4f4;
+}
+
+.support-btn{
+    text-decoration: none;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.product-section{
+    padding: 20px 40px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-title p{
+    color: #888;
+    margin-top: -15px;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.product img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product{
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgb(230, 224, 224);
+    cursor: pointer;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgb(230, 224, 224);
+}
+
+.product h3{
+    margin-top: 10px;
+    color: #333;
+}
+
+.product p{
+    color: #888;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn a{
+    text-decoration: none;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.footer-section{
+    background-color: azure;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 60px;
+}
+
+.footer-col ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-col li{
+    padding: 5px 0;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #333;
+}
+
+.lower-footer{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+.lower-footer a{
+    color: #f4f4f4;
+}
