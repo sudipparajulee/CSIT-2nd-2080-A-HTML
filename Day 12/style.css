@@ -1,6 +1,24 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: sans-serif;
     margin: 0;
+}
+
+.gotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.gotop a{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .topbar{
@@ -79,12 +97,13 @@ body{
 }
 
 .product{
-    background-color: #f4f4f4;
+    background-color: #e1dede;
     padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
     box-shadow: 0 2px 5px rgb(230, 224, 224);
     cursor: pointer;
+    position: relative;
 }
 
 .product:hover{
@@ -101,6 +120,16 @@ body{
     color: #888;
     margin-top: -10px;
     font-size: 14px;
+}
+
+.discount{
+    background-color: red;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 .btn{
