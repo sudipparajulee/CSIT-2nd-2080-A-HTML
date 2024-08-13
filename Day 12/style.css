@@ -60,12 +60,50 @@ body{
     background-color: #f4f4f4;
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 150px;
+    list-style-type: none;
+    padding: 0;
+    background-color: aqua;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+}
+
 .support-btn{
     text-decoration: none;
     background-color: rgb(49, 49, 134);
     color: white;
     padding: 8px 15px;
     border-radius: 10px;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    color: white;
+    font-size: 60px;
 }
 
 .product-section{
