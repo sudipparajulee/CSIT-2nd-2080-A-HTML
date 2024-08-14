@@ -11,6 +11,7 @@ body{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 999;
 }
 
 .gotop a{
@@ -96,14 +97,47 @@ body{
     background-image: url('banner.jpg');
     height: 400px;
     background-size: cover;
+    position: relative;
+}
+
+.banner-inner{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(62, 13, 13, 0.555);
+}
+
+.get-started{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .banner h1{
     color: white;
     font-size: 60px;
+}
+
+.notice{
+    display: flex;
+}
+
+.notice p{
+    padding: 10px 40px;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    margin: 0;
+}
+
+.notice marquee{
+    background-color: #eee;
+    padding: 10px;
+    flex: 1;
 }
 
 .product-section{
