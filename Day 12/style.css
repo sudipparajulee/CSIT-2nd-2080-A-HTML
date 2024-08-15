@@ -123,6 +123,23 @@ body{
     font-size: 60px;
 }
 
+.title-section{
+    padding: 20px 40px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100px;
+}
+
+.title-section-inner{
+    background-color: rgba(53, 15, 15, 0.724);
+    padding: 20px;
+    position: absolute;
+    inset: 0;
+    color: white;
+}
+
 .notice{
     display: flex;
 }
@@ -214,6 +231,28 @@ body{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #b53030;
+    color: white;
+}
+
+.contact-details p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-details a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 49, 134);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .footer-section{
