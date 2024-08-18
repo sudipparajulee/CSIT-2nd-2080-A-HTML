@@ -233,6 +233,39 @@ body{
     border-radius: 5px;
 }
 
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 120px;
+}
+
+.contact-info p{
+    color: #666;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.contact-form input[type=submit]{
+    background-color: blue;
+    width: 50%;
+    color: white;
+    margin: 10px auto;
+}
+
+
 .contact-details{
     display: flex;
     justify-content: space-between;
