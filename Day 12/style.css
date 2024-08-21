@@ -233,6 +233,53 @@ body{
     border-radius: 5px;
 }
 
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+.about-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-content a{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(75, 14, 14, 0.761);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content{
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.popup-content a{
+    text-decoration: none;
+    color: black;
+}
 
 .contact-container{
     display: grid;
