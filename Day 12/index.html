@@ -45,12 +45,13 @@
             <marquee behavior="scroll" direction="left" scrollamount="15">The college will remain closed on Friday</marquee>
         </div> 
 
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup-content">
                 <h2>Contact Details</h2>
                 <p><a href="tel:9876543210">Phone: 9876543210</a></p>
                 <p><a href="mailto:info@lict.edu.np">Email: info@lict.edu.np</a></p>
                 <p><a href="">Address: Kaligandaki Chowk, Nawalpur</a></p>
+                <span class="cross" onclick="hidepopup()">x</span>
             </div>
         </div>
 
@@ -166,5 +167,11 @@
                 <p>Powered By <a href="#">My Company Pvt. Ltd.</a></p>
             </div>
         </footer>
+
+        <script>
+            function hidepopup(){
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
     </body>
 </html>
