@@ -1,0 +1,38 @@
+<!-- Make a Simple Interest Calculator  -->
+<!-- Input the marks of three subjects: Math, Science and English. Then calculate the percentage  -->
+<html>
+    <head>
+        <title>Simple Interest</title>
+    </head>
+    <body>
+        <input type="text" id="p" placeholder="Enter Principal">
+        <input type="text" id="r" placeholder="Enter Rate">
+        <input type="text" id="t" placeholder="Enter Time">
+        <button onclick="calculate()">Calculate</button>
+        <h2 id="result"></h2>
+
+        <input type="text" id="math" placeholder="Enter Math Marks">
+        <input type="text" id="science" placeholder="Enter Science Marks">
+        <input type="text" id="english" placeholder="Enter English Marks">
+        <button onclick="calculatePercentage()">Calculate Percentage</button>
+        <h2 id="percentage"></h2>
+        <script>
+            function calculate(){
+                let p = document.getElementById('p').value;
+                let r = document.getElementById('r').value;
+                let t = document.getElementById('t').value;
+                let si = (p * r * t) / 100;
+                document.getElementById('result').innerHTML = "Simple Interest is: " + si;
+            }
+
+            function calculatePercentage(){
+                let math = document.getElementById('math').value;
+                let science = document.getElementById('science').value;
+                let english = document.getElementById('english').value;
+                let total = parseInt(math) + parseInt(science) + parseInt(english);
+                let percentage = (total / 300) * 100;
+                document.getElementById('percentage').innerHTML = "Percentage is: " + percentage.toFixed(2) + "%";
+            }
+        </script>
+    </body>
+</html>
