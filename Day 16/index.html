@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>My Title</title>
+        <style>
+            input{
+                margin: 10px;
+                padding: 5px;
+                display: block;
+                width: 200px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            input:focus{
+                outline: none;
+                border: 1px solid #333;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" onsubmit="return validate()">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="email" placeholder="Enter Email" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="password" id="cpassword" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+        <script>
+            function validate()
+            {
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('password').value;
+                let cpassword = document.getElementById('cpassword').value;
+
+                if(name.trim() == '' || email.trim() == '' || password.trim() == '' || cpassword.trim() == '')
+                {
+                    alert("Fields cannot be empty");
+                    return false;
+                }
+
+                if(password != cpassword)
+                {
+                    alert("Passwords do not match");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

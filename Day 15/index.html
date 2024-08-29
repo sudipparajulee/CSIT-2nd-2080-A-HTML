@@ -29,6 +29,21 @@
                 let math = document.getElementById('math').value;
                 let science = document.getElementById('science').value;
                 let english = document.getElementById('english').value;
+                if(math.trim() == '' || science.trim() == '' || english.trim() == '')
+                {
+                    alert("Marks cannot be empty");
+                    return;
+                }
+                if(isNaN(math) || isNaN(science) || isNaN(english))
+                {
+                    alert("Marks should be a number");
+                    return;
+                }
+                if(math>100 || science>100 || english>100)
+                {
+                    alert("Math marks should be less than 100");
+                    return;   
+                }
                 let total = parseInt(math) + parseInt(science) + parseInt(english);
                 let percentage = (total / 300) * 100;
                 document.getElementById('percentage').innerHTML = "Percentage is: " + percentage.toFixed(2) + "%";
