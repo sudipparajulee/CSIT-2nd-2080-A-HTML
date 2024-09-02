@@ -14,6 +14,7 @@
                 text-align: center;
                 color: white;
                 border-radius: 8px;
+                transition: 0.4s;
             }
         </style>
     </head>
@@ -21,5 +22,25 @@
         <div id="progress-bar">
             <div id="progress">60%</div>
         </div>
+        <button id="progressbtn">Animate</button>
+        <script>
+            let progress = document.getElementById('progress');
+            document.getElementById('progressbtn').addEventListener('click',function(){
+                progress.innerHTML = '5%';
+                progress.style.width = '5%';
+                let counter = setInterval(counterfn,200);
+                let p = 5;
+                function counterfn()
+                {
+                    progress.innerHTML = p+'%';
+                    progress.style.width = p+'%';
+                    p++;
+                    if(p>60)
+                    {
+                        clearInterval(counter);
+                    }
+                }
+            });
+        </script>
     </body>
 </html>

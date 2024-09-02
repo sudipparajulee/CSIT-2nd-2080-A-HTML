@@ -383,3 +383,13 @@ body{
 .lower-footer a{
     color: #f4f4f4;
 }
+
+@media screen and (max-width:768px) {
+    .product-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+}
